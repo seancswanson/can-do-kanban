@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+    /* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: inherit;
+}
+
+html {
+    /* Force vertical scrollbar so that page does not 'jump' when it appears
+      http://css-tricks.com/snippets/css/force-vertical-scrollbar/
+   */
+    overflow-y: scroll;
+
+    box-sizing: border-box;
+    /* Hyphens,
+      but see also http://blog.kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/
+   */
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+
+    background: black;
+
+        -ms-hyphens: auto;
+         -o-hyphens: auto;
+    /* http://necolas.github.com/normalize.css/2.0.1/normalize.css */
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+
+body {
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+
+    text-align: left;
+
+    color: white;
+    background-color: #2b3e4f;
+    background-image: url('https://www.transparenttextures.com/patterns/binding-dark.png');
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+img {
+    -ms-interpolation-mode: bicubic; /* Better IMG resizing in IE */
+    border: 0;
+}
